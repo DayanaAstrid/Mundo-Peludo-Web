@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Peludo</title>
+
+  <!-- Fuente personalizada desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Enlace al CSS -->
+  <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+
+  <!-- 🧢 Encabezado con nombre y navegación -->
+  <div class="barra-navegacion">
+    <div class="logo">MUNDO PELUDO</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- 🎥 Video de fondo -->
+  <header>
+    <video class="video-header" autoplay muted loop playsinline>
+      <source src="Imagenes/MundoPeludo.mp4" type="video/mp4">
+    </video>
+  </header>
+
+  <!-- 🐾 Sección Inicio con cuadro decorativo -->
+  <section id="inicio">
+    <div class="cuadro-inicio">
+      <h2>Bienvenidos a Mundo Peludo</h2>
+      <p>Nos dedicamos al bienestar de mascotas pequeñas y con necesidades especiales.</p>
+    </div>
+  </section>
+
+  <!-- 🐶 Sección Sobre Nosotros -->
+  <section id="sobre-nosotros" class="sobre-nosotros">
+    <div class="cuadro-nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p class="descripcion">
+        En <strong>Mundo Peludo</strong> creemos que cada mascota merece amor, respeto y bienestar. Somos una empresa creativa que integra diseño, educación y tecnología para mejorar la vida de los animales y fortalecer el vínculo con sus cuidadores.
+      </p>
+
+      <div class="bloques-nosotros">
+        <div class="bloque">
+          <button class="boton-brillante">Misión</button>
+          <p>
+            Promover el bienestar integral de las mascotas mediante soluciones educativas, visuales y tecnológicas que inspiren cuidado, respeto y alegría en cada hogar.
+          </p>
+        </div>
+        <div class="bloque">
+          <button class="boton-brillante">Visión</button>
+          <p>
+            Ser referente en innovación emocional y educativa para el mundo animal, creando experiencias que conecten a las personas con sus mascotas de forma auténtica y responsable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 🐾 Sección Productos sin títulos individuales -->
+<section id="productos" class="seccion-productos">
+  <h2>Productos</h2>
+  <div class="grid-productos">
+
+    <div class="producto">
+      <img src="Imagenes/Collar.png" alt="Producto 1">
+    </div>
+    <div class="producto">
+      <img src="Imagenes/Correa.png" alt="Producto 2">
+    </div>
+    <div class="producto">
+      <img src="Imagenes/Shampoo.png" alt="Producto 3">
+    </div>
+    <div class="producto">
+      <img src="Imagenes/Comida.png" alt="Producto 4">
+    </div>
+    <div class="producto">
+      <img src="Imagenes/Croquetas.png" alt="Producto 5">
+    </div>
+    <div class="producto">
+      <img src="Imagenes/Snacks.png" alt="Producto 6">
+    </div>
+
+  </div>
+</section>
+<!-- 📬 Sección Contacto -->
+<section id="contacto" class="seccion-contacto">
+  <h2>Contacto</h2>
+  <form class="formulario-contacto">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="correo" placeholder="Correo electrónico" required>
+    <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- 🐾 Pie de página con imagen y texto -->
+<footer class="pie-pagina">
+  <div class="contenido-footer">
+<img src="Imagenes/Mundo Peludo.png" alt="Logo Mundo Peludo">
+    <span class="texto-logo">MUNDO PELUDO</span>
+  </div>
+  <p>© 2025 Mundo Peludo. Todos los derechos reservados.</p>
+</footer>
+
+
+</body>
+</html>

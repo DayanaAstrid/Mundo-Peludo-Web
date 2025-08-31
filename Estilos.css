@@ -1,0 +1,317 @@
+:root {
+  --color-fondo: #fdf6f0;
+  --color-cafe: #5c3a21;
+  --color-cafe-oscuro: #3e2714;
+  --color-primario: #e6d3c3;
+  --color-secundario: #c49a6c;
+  --fuente: 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--fuente);
+  background-color: var(--color-fondo);
+  color: var(--color-cafe);
+  margin: 0;
+  padding: 0;
+}
+
+/* 🧢 Barra de navegación */
+.barra-navegacion {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--color-cafe);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-cafe);
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--color-secundario);
+  text-shadow: 0 0 8px var(--color-secundario);
+}
+
+/* 🎥 Video de fondo */
+header {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.video-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* 🐾 Sección Inicio con cuadro decorativo */
+#inicio {
+  background-color: var(--color-primario);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.cuadro-inicio {
+  border: 3px solid var(--color-cafe-oscuro);
+  border-radius: 12px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(92, 58, 33, 0.3);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cuadro-inicio h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cuadro-inicio p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 🐶 Sección Sobre Nosotros con fondo café y letras blancas */
+.sobre-nosotros {
+  background-color: var(--color-fondo);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.cuadro-nosotros {
+  background-color: var(--color-cafe);
+  color: white;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(92, 58, 33, 0.4);
+}
+
+.cuadro-nosotros h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cuadro-nosotros .descripcion {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* 🧱 Bloques de Misión y Visión */
+.bloques-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.bloque {
+  background-color: var(--color-primario);
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  color: var(--color-cafe);
+}
+
+.bloque:hover {
+  transform: translateY(-5px);
+}
+
+/* ✨ Botones con efecto brillante */
+.boton-brillante {
+  background-color: var(--color-secundario);
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.boton-brillante:hover {
+  background-color: white;
+  color: var(--color-cafe);
+  text-shadow: 0 0 8px white;
+  box-shadow: 0 0 12px var(--color-secundario);
+}
+
+/* 📱 Responsivo */
+
+/* 🐾 Sección Productos sin títulos */
+.seccion-productos {
+  background-color: var(--color-primario);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.seccion-productos h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--color-cafe);
+  font-family: var(--fuente);
+}
+
+/* 🧩 Grid con 3 columnas en una sola fila */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🎁 Tarjeta de producto sin texto */
+.producto {
+  background-color: #fff;
+  border: 2px solid var(--color-cafe);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(92, 58, 33, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+/* 🖼 Imagen del producto */
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* 📬 Sección Contacto */
+.seccion-contacto {
+  background-color: var(--color-fondo);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.seccion-contacto h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--color-cafe);
+  font-family: var(--fuente);
+}
+
+/* 📝 Formulario */
+.formulario-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 15px;
+  border: 2px solid var(--color-cafe);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--fuente);
+  background-color: #fff;
+  color: var(--color-cafe);
+}
+
+.formulario-contacto input::placeholder,
+.formulario-contacto textarea::placeholder {
+  color: #a88b6b;
+}
+
+/* ✉️ Botón de enviar */
+.formulario-contacto button {
+  background-color: var(--color-secundario);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: var(--color-cafe);
+}
+/* 🐾 Pie de página */
+.pie-pagina {
+  background-color: var(--color-cafe);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 16px;
+  font-family: var(--fuente);
+}
+
+.logo-footer {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: var(--fuente);
+}
+/* 🐾 Pie de página con imagen y texto */
+.pie-pagina {
+  background-color: var(--color-cafe);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 16px;
+  font-family: var(--fuente);
+}
+
+.contenido-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.contenido-footer img {
+  width: 40px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texto-logo {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: var(--fuente);
+}
